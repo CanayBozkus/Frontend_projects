@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="title header-title">Todo List</h1>
+        </header>
+        
+        <section class="new-todo column-flex">
+            <input type="text" class="add-todo-input rounded-corners" data-time="-">
+            <div class="btns flex-nowrap">
+                <button class="btn btn-green rounded-corners add">Add</button>
+                <div class="dropdown-parent">
+                    <button class="btn btn-blue rounded-corners time">Time</button>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
+        </section>
+        <section class="current-todos">
+            <h2 class="title sub-title">Todos:</h1>
+            <ol>
+                
+            </ol>
+        </section>
+        <footer class="btns flex-nowrap">
+            <button class="btn btn-red rounded-corners remove-all">Clear List</button>
+            <button class="btn btn-green rounded-corners check-all">Check All</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
